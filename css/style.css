@@ -1,8 +1,9 @@
 body {
   border-top:5px solid black;
-  background:#ebe8de;
+  background: #233237;
   font-family: 'Open Sans', sans-serif;
   color:#333333;
+  /*background: url("https://s3.amazonaws.com/website-seneca/color.png");*/
 }
 
 input {
@@ -43,20 +44,24 @@ strong {
 }
 
 figcaption strong {
-  border-bottom: 1px solid #D6D0C1;
+  border-bottom: 1px solid white;
+  /*border-bottom: 1px solid #D6D0C1;*/
   padding-bottom:10px;
   margin: 10px 0;
-  display:block;
+  display: block;
+  color: white;
 }
 
 figcaption {
   line-height: 25px;
   font-size:14px;
   width:200px;
+  color: white;
 }
 
 hr {
-  background-color: #D6D0C1;
+  background-color: white;
+  /*background-color: #D6D0C1;*/
   border:0;
   height:1px;
   margin:20px 0;
@@ -66,30 +71,31 @@ hr {
 /* HEADER */
 
 header {
-  position:relative;
-  width:auto;
-  max-width:900px;
+  position: relative;
+  width: auto;
+  max-width: 900px;
   margin: 0 auto 20px auto;
 }
 
 header h1 {
   margin:35px 0 0 0;
   font-size:55px;
-  color:black;
+  color: white;
   font-family: 'Baumans', cursive;
 }
 
 header p {
   font-family: 'Open Sans', sans-serif;
   font-size:16px;
-  color: #4A463B;
+  color: white;
+  /*color: #4A463B;*/
   margin-left:132px;
 }
 
 nav {
-  position:absolute;
-  right:0;
-  bottom:0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 nav ul {
@@ -97,14 +103,15 @@ nav ul {
 }
 
 nav ul li {
-  display:block;
-  float:left;
-  padding:3px 15px;
+  display: block;
+  float: left;
+  padding: 3px 15px;
+  color: white;
 }
 
 nav ul li a {
   font-family: 'Open Sans', sans-serif;
-  text-transform:uppercase;
+  text-transform: uppercase;
   transition: all .25s ease;
 }
 
@@ -258,17 +265,18 @@ nav ul li a:hover {
 /* FOUR COLUMNS */
 
 #four_columns, #text_columns {
-  line-height:25px;
+  line-height: 25px;
   font-family: 'Open Sans', sans-serif;
-  clear:both;
-  width:auto;
+  clear: both;
+  width: auto;
   max-width:900px;
   margin:0 auto;
 }
 
 #four_columns h2, #text_columns h3 {
   font-size:20px;
-  border-bottom: 1px solid #D6D0C1;
+  border-bottom: 1px solid white;
+  /*border-bottom: 1px solid #D6D0C1;*/
   padding: 20px 0;
   margin-bottom: 20px;
 }
@@ -309,6 +317,7 @@ nav ul li a:hover {
   float:left;
   width:auto;
   max-width: 450px;
+  color: white;
 }
 
 #text_columns .column2 {
