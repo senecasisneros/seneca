@@ -143,12 +143,15 @@ nav ul li a:hover {
 }
 
 /* 3 COLUMNS */
+.socialImage {
+  width: 70px;
+}
 
 #boxcontent {
   width:auto;
   max-width:900px;
   margin:0 auto;
-  padding:70px 0 45px 0;
+  /*padding:70px 0 45px 0;*/
 }
 
 #boxcontent article {
