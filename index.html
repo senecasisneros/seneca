@@ -1,188 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Seneca Sisneros</title>
-  <link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
   <link href="lightbox/css/lightbox.css" rel="stylesheet" />
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'/>
-  <script src="js/modernizr.js"></script>
-  <script src="js/respond.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'>
+
+  <script src="js/vendor/modernizr.min.js"></script>
+  <script src="js/vendor/respond.min.js"></script>
+
   <!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
   <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript">window.jQuery || document.write('<script type="text\/javascript" src="js\/1.7.2.jquery.min"><\/script>')</script>
+  <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js\/vendor\/1.7.2.jquery.min.js"><\/script>')</script>
+
   <script src="lightbox/js/lightbox.js"></script>
-  <script src="js/prefixfree.min.js"></script>
-  <script src="js/jquery.slides.min.js"></script>
+  <script src="js/vendor/prefixfree.min.js"></script>
+  <script src="js/vendor/jquery.slides.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+  $(function() {
+    $('#slides').slidesjs({
+      height: 235,
+      navigation: false,
+      pagination: false,
+      effect: {
+        fade: {
+          speed: 400
+        }
+      },
+      callback: {
+        start: function(number)
+        {
+          $("#slider_content1,#slider_content2,#slider_content3").fadeOut(500);
+        },
+        complete: function(number)
+        {
+          $("#slider_content" + number).delay(500).fadeIn(1000);
+        }
+      },
+      play: {
+        active: false,
+        auto: true,
+        interval: 6000,
+        pauseOnHover: false,
+        effect: "fade"
+      }
+    });
+  });
+  </script>
 </head>
+
 <body>
   <header>
+    <div class="toggleMobile">
+      <span class="menu1"></span>
+      <span class="menu2"></span>
+      <span class="menu3"></span>
+    </div>
+    <div id="mobileMenu">
+      <ul>
+        <li><a href="javascript:void(0)">Home</a></li>
+        <li><a href="javascript:void(0)">About</a></li>
+        <li><a href="javascript:void(0)">Portfolio</a></li>
+      </ul>
+    </div>
     <h1>Seneca Sisneros</h1>
     <p>Full-Stack Javascript Web Developer</p>
+
     <nav>
+      <h2 class="hidden">Our navigation</h2>
       <ul>
-        <li><a href=#>Home</a></li>
-        <li><a href=#>About</a></li>
-        <li><a href=#>Skills</a></li>
-        <li><a href=#>Portfolio</a></li>
+        <li><a href="javascript:void(0)">Home</a></li>
+        <li><a href="javascript:void(0)">About</a></li>
+        <li><a href="javascript:void(0)">Skills</a></li>
+        <li><a href="javascript:void(0)">Portfolio</a></li>
       </ul>
-      <nav>
-      </header>
+    </nav>
+  </header>
+  <section class="container">
+    <h2 class="hidden">Lorem Ipsum</h2>
+    <!-- <article id="slider_content1">
+      <h3>Lorem ipsum dolor?</h3>
+      <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik. <a href="javascript:void(0)" class="responsive_button">Mehr lesen...</a></p>
+      <a class="button" href="javascript:void(0)">Mehr lesen</a>
+    </article>
+    <article id="slider_content2">
+      <h3>Nulla consequat</h3>
+      <p>Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. <a href="javascript:void(0)" class="responsive_button">Mehr lesen...</a></p>
+      <a class="button" href="javascript:void(0)">Mehr lesen</a>
+    </article>
+    <article id="slider_content3">
+      <h3>Lorem ipsum</h3>
+      <p>Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. <a href="javascript:void(0)" class="responsive_button">Mehr lesen...</a></p>
+      <a class="button" href="javascript:void(0)">Mehr lesen</a>
+    </article> -->
+    <div id="slides">
+      <img class="roadImages1" src="https://s3.amazonaws.com/website-seneca/asphalt2.jpg" alt="Some alt text">
+      <img class="deskImages2" src="https://s3.amazonaws.com/website-seneca/computerDesk.jpg" alt="Some alt text">
+      <img class="venturaImages3" src="https://s3.amazonaws.com/website-seneca/ventura_rocks.jpg" alt="Some alt text">
+    </div>
+  </section>
+  <section id="spacer">
+    <h2 class="hidden">Spacer</h2>
+    <p>Some text goes here</p>
+    <div class="search">
+      <form action="#">
+        <input type="text" name="sitesearch" value="Enter a word..."/>
+        <input type="submit" name="start_search" class="button" value="Search"/>
+      </form>
+    </div>
+  </section>
 
-      <section class="container">
-        <h2 class="hidden">Images</h2>
-        <article id="slider_content1">
-          <h3>Lorem ipsum dolor?</h3>
-          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik</p>
-          <a class="button" href="some_page.html">Mehr lesen</a>
-        </article>
-        <article id="slider_content2">
-          <h3>Lorem ipsum dolor?</h3>
-          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik</p>
-          <a class="button" href="some_page.html">Mehr lesen</a>
-        </article>
-        <article id="slider_content3">
-          <h3>Lorem ipsum dolor?</h3>
-          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik</p>
-          <a class="button" href="some_page.html">Mehr lesen</a>
-        </article>
-        <div id="slides">
-          <img src="https://s3.amazonaws.com/website-seneca/asphalt2.jpg" alt="A long asphalt road" style="height:500px;width:500px;">
-          <img src="https://s3.amazonaws.com/website-seneca/computerDesk.jpg" alt="Desk with a computer" style="height:500px;width:500px;">
-          <img src="https://s3.amazonaws.com/website-seneca/ventura_rocks.jpg" alt="Ventura CA ocean with stacked rocks" style="height:500px;width:500px;">
-        </div>
-      </section>
+  <section id="boxcontent">
+    <h2 class="hidden">Socail Media Links</h2>
+    <article>
+      <a href=https://github.com/senecasisneros target="_blank"><img src="./images/github.png" alt="Github"></a>
+      <!-- <h3>Github</h3> -->
+    </article>
+    <article>
+      <a href=https://www.linkedin.com/in/seneca-sisneros target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+      <!-- <h3>LinkedIn</h3> -->
+    </article>
+    <article>
+      <a href=https://twitter.com/sen427 target="_blank"><img src="./images/Twitter_Social.png" alt="Twitter"></a>
+      <!-- <h3>Twitter</h3> -->
+    </article>
+    <article>
+      <a href=mailto:seneca.sisneros@yahoo.com><img src="./images/Yahoo.png" alt="Yahoo Email"></a>
+      <!-- <h3>Email</h3> -->
+    </article>
+    <br class="clear"/>
+  </section>
 
-      <section id="spacer">
-        <h2 class="hidden">Spacer</h2>
-        <p>this is text for the spacer section</p>
-        <div class="search">
-          <form action="#">
-            <input type="text" name="sitesearch" value="Search on website" />
-            <input type="submit" name="start_search" class="button" value="Search" />
-          </form>
-        </div>
-      </section>
+  <section id="four_columns">
+    <h2>
+      Portfolio
+    </h2>
+    <!-- <article class="img-item">
+    <h3 class="hidden">Portfolio</h3>
+    <figure>
+    <a href="img/example-slide-1.jpg" rel="lightbox" title="Some title">
+    <span class="thumb-screen"></span>
+    <img src="img/example-slide-1sml.jpg" alt="Some alt text"/>
+  </a>
+  <figcaption>
+  <strong>
+  Photo by: Some name
+</strong>
+Als es die ersten Hügel des Kursivgebirges erklommen hatte
+</figcaption>
+</figure>
+</article> -->
 
-      <section id="boxcontent">
-        <h2 class="hidden">Box Content</h2>
-        <article>
-          <a href=https://github.com/senecasisneros target="_blank"><img src="./images/github.png" alt="Github"></a>
-          <a href=https://www.linkedin.com/in/seneca-sisneros target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"></a>
-          <a href=https://twitter.com/sen427 target="_blank"><img src="./images/Twitter_Social.png" alt="Twitter"></a>
-          <a href="mailto:seneca.sisneros@yahoo.com"><img src="./images/Yahoo.png" alt="Email"></a>
-        </article>
-        <!-- <br class="clear"> -->
-      </section>
+<article class="img-item">
+  <h3 class="hidden">Dash and Dine</h3>
+  <figure>
+    <a href="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" rel="lightbox" title="Dash and Dine">
+      <span class="thumb-screen"></span>
+      <img src="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" alt="Video of Dash and Dine App"/>
+    </a>
+    <figcaption>
+      <strong>
+        Dash and Dine
+      </strong>
+      <strong>
+        React, Redux, HTML5, CSS3, Node.js, Express.js, MongoDB, Bootstrap, Babel, Webpack and Eslint
+      </strong>
+      A project, in collaboration with 3 other developers, that allows you to search by location, to get a restaurant suggestion at random. It provides the contact information, rating, map, and even the current weather for that location.
+    </figcaption>
+  </figure>
+</article>
+<article class="img-item">
+  <h3 class="hidden">Museo</h3>
+  <figure>
+    <a href="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" rel="lightbox" title="Museo">
+      <span class="thumb-screen"></span>
+      <img src="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" alt="Video of Museo app"/>
+    </a>
+    <figcaption>
+      <strong>
+        Museo
+      </strong>
+      <strong>
+        Javascript, React, Flux, HTML5, CSS3, Node.js, Express.js, MongoDB, Babel, Webpack, Eslint, Bootstrap and Materialize.
+      </strong>
+      An application that allows you to search by artist or song name and will produce the corresponding music video and lyrics.
+    </figcaption>
+  </figure>
+</article>
+<article class="img-item">
+  <h3 class="hidden">The Mysterious Moon</h3>
+  <figure>
+    <a href="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" rel="lightbox" title="The Mysterious Moon">
+      <span class="thumb-screen"></span>
+      <img src="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" alt="Video of The Mysterious Moon app"/>
+    </a>
+    <figcaption>
+      <strong>
+        The Mysterious Moon
+      </strong>
+      <strong>
+        Javascript, React, HTML5, CSS3, Node.js, Babel, Bootstrap,Webpack and Eslint.
+      </strong>
+      You can search by zip code to return the current moon phase and Additional information about the moon’s location and associated spiritual meaning.
+      Vist the website
+    </figcaption>
+  </figure>
+</article>
+<br class="clear"/>
+</section>
 
-      <section>
-        <h2>This is a header</h2>
-
-        <article class="img-item">
-          <figure>
-            <a href="" rel=lightbox title="some text">
-              <span class="thumb-screen"></span>
-              <img src="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" alt="Some text">
-            </a>
-            <figcaption>
-              <strong>
-                Photo By: Some Name
-              </strong>
-              Some text to explain.....
-            </figcaption>
-          </figure>
-        </article>
-        <article class="img-item">
-          <figure>
-            <a href="" rel=lightbox title="some text">
-              <span class="thumb-screen"></span>
-              <img src="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" alt="Some text">
-            </a>
-            <figcaption>
-              <strong>
-                Photo By: Some Name
-              </strong>
-              Some text to explain.....
-            </figcaption>
-          </figure>
-        </article>
-        <article class="img-item">
-          <figure>
-            <a href="" rel=lightbox title="some text">
-              <span class="thumb-screen"></span>
-              <img src="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" alt="Some text">
-            </a>
-            <figcaption>
-              <strong>
-                Photo By: Some Name
-              </strong>
-              Some text to explain.....
-            </figcaption>
-          </figure>
-        </article>
-        <br class="clear"/>
-
-        <section id="text_columns">
-          <h2 class="hidden">New Section</h2>
-          <article class="column1">
-            <h3>This is a header</h3>
-            <p>If someone would have come to me a few years ago and told me my life was about to take a 180-degree turn, and that my days working at the Bank were numbered, I would have laughed it off to cover up the anxiety of the very thought. At that time, I had already spent nearly 10 years building a career with the Bank, navigating my way through sales and lending, all while trying to climb the corporate ladder. So, the very thought that all of that would someday be gone, especially if by my own choice, would most definitely not be something I saw as a positive impact on my future. Don’t get me wrong, my time at the Bank provided me with years of experience, and a set of invaluable skills that have helped me get where I am today. But despite that, there was something big missing from my definition of success. Eventually I did come to realize the true meaning of Casey Neitstat’s quote. What I considered safe, was actually the most dangerous thing I could do. For that reason, I decided it was time for me to make a big change and take a chance to discover what I was missing. It was time for me to discover my passion and pursue my dream of working in the tech industry. A decision that has helped shape the person I am today. So, who exactly am I? Well, I’m definitely more than just a self- taught Full-Stack Web Developer. I’m an individual who went through a massive personal and professional transformation over the past few years that I am extremely grateful for. A transformation, that not only challenged me, but helped me identify my strengths and weaknesses, and helped me learn how to work them to my advantage. I am also a self-motivated, passionate individual that doesn’t give up easily. I am a person that willingly gave up all comfort and financial security and placed a bet on myself, knowing I needed, and wanted, to make a bigger contribution in this world. I love hanging out with my two spoiled dogs, exploring new places, kickboxing, juicing and crystals. I push myself every day to learn something new, grow my faith and challenge myself to become a better person. This is just the start of my journey, and I’m excited to see what comes next.</p>
-          </article>
-          <section class="column2">
-            <h3 class="hidden">This is a hiddent header</h3>
-            <article class="row">
-              <h4 class="hidden">This is hidden</h4>
-              <img src="https://s3.amazonaws.com/website-seneca/Pups.jpg" alt="two dogs">
-              <p>Some text if needed</p>
-            </article>
-            <article class="row">
-              <h4 class="hidden">This is hidden</h4>
-              <img src="https://s3.amazonaws.com/website-seneca/family1.jpg" alt="Amber and Seneca">
-              <p>Some text if needed</p>
-            </article>
-          </section>
-        </section>
-      </section>
-
-      <footer>
-        <h2 class="hidden">The footer</h2>
-        <section id="copyright">
-          <h3 class="hidden">Copyright notice</h3>
-          <div class="wrapper">
-            <div class="social">
-              <a href=https://github.com/senecasisneros target="_blank"><img src="./images/github.png" alt="Github"  width="25" /></a>
-              <a href=https://www.linkedin.com/in/seneca-sisneros target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"  width="25" /</a>
-              <a href=https://twitter.com/sen427 target="_blank"><img src="./images/Twitter_Social.png" alt="Twitter"  width="25" /></a>
-              <a href="mailto:seneca.sisneros@yahoo.com"><img src="./images/Yahoo.png" alt="Email"  width="25" /></a>
-            </div>
-            &copy; Copyright 2017 by <a href="http://www.senecasisneros">Seneca Sisneros</a>. All Rights Reserved.
-          </div>
-        </section>
-        <section class="wrapper">
-          <h3 class="hidden">Footer Content</h3>
-          <article class="column">
-            <h4>This is header</h4>
-            Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort "und" und das Blindtextchen solle umkehren und wieder in sein.
-          </article>
-          <article class="column midlist">
-            <h4>Consectetuer</h4>
-            <ul>
-              <li><a href="javascript:void(0)">Die Copy warnte das Blindtextchen</a></li>
-              <li><a href="javascript:void(0)">Unterwegs traf es eine Copy</a></li>
-              <li><a href="javascript:void(0)">Doch alles Gutzureden konnte</a></li>
-              <li><a href="javascript:void(0)">Als es die ersten Hügel</a></li></ul></article>
-              <article class="column rightlist">
-                <h4>Dolor sit amet</h4>
-                <ul>
-                  <li><a href="javascript:void(0)"><img src="https://s3.amazonaws.com/website-seneca/asphalt2.jpg" width="80" alt="some alt text"/><span>Unterwegs traf es eine Copy. Die Copy warnte.</span></a></li>
-                  <li><a href="javascript:void(0)"><img src="https://s3.amazonaws.com/website-seneca/computerDesk.jpg" width="80" alt="some alt text"/><span>Doch alles Gutzureden konnte es nicht.</span></a></li>
-                  <li><a href="javascript:void(0)"><img src="https://s3.amazonaws.com/website-seneca/ventura_rocks.jpg" width="80" alt="some alt text"/><span>Und es dann in ihre Agentur schleppten.</span></a></li>
-                </ul>
-              </article>
-            </section>
-          </footer>
-        </body>
-        </html>
+<section id="text_columns">
+  <h2 class="hidden">About me</h2>
+  <article class="column1">
+    <h3>About Me</h3>
+    <p>If someone would have come to me a few years ago and told me my life was about to take a 180-degree turn, and that my days working at the Bank were numbered, I would have laughed it off to cover up the anxiety of the very thought. At that time, I had already spent nearly 10 years building a career with the Bank, navigating my way through sales and lending, all while trying to climb the corporate ladder. So, the very thought that all of that would someday be gone, especially if by my own choice, would most definitely not be something I saw as a positive impact on my future.
+      Don’t get me wrong, my time at the Bank provided me with years of experience, and a set of invaluable skills that have helped me get where I am today. But despite that, there was something big missing from my definition of success. Eventually I did come to realize the true meaning of Casey Neitstat’s quote. What I considered safe, was actually the most dangerous thing I could do. For that reason, I decided it was time for me to make a big change and take a chance to discover what I was missing. It was time for me to discover my passion and pursue my dream of working in the tech industry. A decision that has helped shape the person I am today.
+      So, who exactly am I? Well, I’m definitely more than just a self- taught Full-Stack Web Developer. I’m an individual who went through a massive personal and professional transformation over the past few years that I am extremely grateful for. A transformation, that not only challenged me, but helped me identify my strengths and weaknesses, and helped me learn how to work them to my advantage. I am also a self-motivated, passionate individual that doesn’t give up easily. I am a person that willingly gave up all comfort and financial security and placed a bet on myself, knowing I needed, and wanted, to make a bigger contribution in this world. I love hanging out with my two spoiled dogs, exploring new places, kickboxing, juicing and crystals. I push myself every day to learn something new, grow my faith and challenge myself to become a better person. This is just the start of my journey, and I’m excited to see what comes next.
+    </p>
+  </article>
+  <section class="column2">
+    <h3 class="hidden">Pictures</h3>
+    <article class="row">
+      <h4 class="hidden">Amber and Seneca</h4>
+      <img src="https://s3.amazonaws.com/website-seneca/family1.jpg" width="80" class="rocket" alt="Picture of Amber and Seneca"/>
+      <p>Some text goes here.</p>
+    </article>
+    <article class="row">
+      <h4 class="hidden">Gabbie and Bella</h4>
+      <img src="https://s3.amazonaws.com/website-seneca/Pups.jpg" width="80" class="clock" alt="Picture of Gabbie and Bella"/>
+      <p>Some text goes here.</p>
+    </article>
+  </section>
+</section>
+<footer>
+  <h2 class="hidden">Our footer</h2>
+  <section id="copyright">
+    <h3 class="hidden">Copyright notice</h3>
+    <div class="wrapper">
+      <div class="social">
+        <a href=https://github.com/senecasisneros target="_blank"><img src="./images/github.png" alt="Github"  width="25" /></a>
+        <a href=https://www.linkedin.com/in/seneca-sisneros target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"  width="25" /</a>
+        <a href=https://twitter.com/sen427 target="_blank"><img src="./images/Twitter_Social.png" alt="Twitter"  width="25" /></a>
+        <a href="mailto:seneca.sisneros@yahoo.com"><img src="./images/Yahoo.png" alt="Email"  width="25" /></a>
+      </div>
+      &copy; Copyright 2014 by <a href="www.senecasisneros.com">Seneca Sisneros</a>. All Rights Reserved.
+    </div>
+  </section>
+  <section class="wrapper">
+    <h3 class="hidden">Footer content</h3>
+    <article class="column">
+      <h4>Title</h4>
+      Some text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes here
+    </article>
+    <article class="column midlist">
+      <h4>Title</h4>
+      <ul>
+        <li><a href="javascript:void(0)">Home</a></li>
+        <li><a href="javascript:void(0)">About</a></li>
+        <li><a href="javascript:void(0)">Skills</a></li>
+        <li><a href="javascript:void(0)">Portfolio</a></li>
+      </ul>
+    </article>
+    <!-- <article class="column rightlist">
+      <h4>Dolor sit amet</h4>
+      <ul>
+        <li><a href="javascript:void(0)"><img src="https://s3.amazonaws.com/website-seneca/asphalt2.jpg" width="80" alt="Some alt text"/><span>Unterwegs traf es eine Copy. Die Copy warnte.</span></a></li>
+        <li><a href="javascript:void(0)"><img src="https://s3.amazonaws.com/website-seneca/computerDesk.jpg" width="80" alt="Some alt text"/><span>Doch alles Gutzureden konnte es nicht.</span></a></li>
+        <li><a href="javascript:void(0)"><img src="https://s3.amazonaws.com/website-seneca/ventura_rocks.jpg" width="80" alt="Some alt text"/><span>Und es dann in ihre Agentur schleppten.</span></a></li>
+      </ul>
+      <br class="clear"/>
+    </article> -->
+  </section>
+</footer>
+</body>
+</html>
