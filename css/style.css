@@ -522,18 +522,20 @@ footer .wrapper .column h4 {
   color: #000;
 }
 
-/*.roadImages1 {
-height: 470px;
-margin-top: -50px;
+.roadImages {
+/*height: 470px;*/
+margin-top: -250px;
 
 }
-.deskImages2 {
-height: 450px;
+.deskImages {
+/*height: 450px;*/
+margin-top: -250px;
+
 }
-.venturaImages3 {
-height: 400px;
-margin-top: -50px;
-}*/
+.venturaImages {
+/*height: 400px;*/
+margin-top: -220px;
+}
 
 
 
@@ -841,51 +843,34 @@ li {
   float: left;
 }
 
-
-
 figure.item {
-    /* To correctly align image, regardless of content height: */
-    vertical-align: top;
-    display: inline-block;
-    /* To horizontally center images and caption */
-    text-align: center;
-    /* The width of the container also implies margin around the images. */
-    width: 120px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
 }
 
 .icons {
-    width: 100px;
-    height: 100px;
-    background-color: grey;
-}
-.caption {
-    /* Make the caption a block so it occupies its own line. */
-    display: block;
-    color: white;
-}
-
-
-/*.icons {
   width: 100px;
-  float: left;
+  height: 100px;
+}
+
+.caption {
+  display: block;
   color: white;
-  margin-right: 25px;
-}*/
+}
 
 .skills {
   clear: both;
-  /*color: white;
-  font-family: 'Open Sans', sans-serif;
-  margin:3px 70px;*/
+  text-align: center;
+  /*border-top: 1px solid white;
+  padding: 20px 0;
+  margin-top: 20px;*/
 
 }
-
-
-
-/*width: auto;*/
-/*max-width:900px;*/
-/*position: absolute*/
-/*float: right;
-margin: 0 1.5%;
-width: 30%;*/
-/*line-height: 25px;*/
+/*
+.portfolio {
+  border-top: 10px solid white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}*/
