@@ -285,7 +285,7 @@ margin-left:75px;
   clear: both;
   width: auto;
   /*max-width:900px;*/
-  margin:3px 70px;
+  margin: 1% 5%;
 }
 
 
@@ -879,3 +879,7 @@ margin-bottom: 20px;
   max-width: 170%;
   height: auto;
 }
+
+/*#aboutMeText {
+  color: white;
+}*/
