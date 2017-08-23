@@ -62,30 +62,36 @@
       <span class="menu3"></span>
     </div>
     <div id="mobileMenu">
-      <ul>
-        <li><a href="javascript:void(0)">Home</a></li>
-        <li><a href="javascript:void(0)">About</a></li>
-        <li><a href="javascript:void(0)">Portfolio</a></li>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#text_columns">About</a></li>
+        <li><a href="#four_columns">Portfolio</a></li>
       </ul>
     </div>
+
     <h1>Seneca Sisneros</h1>
     <p>Full-Stack Javascript Web Developer</p>
-
     <nav>
       <h2 class="hidden">Our navigation</h2>
-      <ul>
-        <li><a href="javascript:void(0)">Home</a></li>
-        <li><a href="javascript:void(0)">About</a></li>
-        <li><a href="javascript:void(0)">Skills</a></li>
-        <li><a href="javascript:void(0)">Portfolio</a></li>
-      </ul>
-      <!-- <ul class="nav navbar-right">
+      <div class="nav-left">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#text_columns">About</a></li>
+          <li><a href="javascript:void(0)">Skills</a></li>
+          <li><a href="#four_columns">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="nav-right">
+      <ul class="pull-right nav navbar-nav">
+      <li><a href=https://www.linkedin.com/in/seneca-sisneros target="_blank"><img src="./images/linkedin.png" alt="LinkedIn" class="socialImage"></a></li>
       <li><a href=https://www.linkedin.com/in/seneca-sisneros target="_blank"><img src="./images/linkedin.png" alt="LinkedIn" class="socialImage"></a></li>
       <li><a href=https://github.com/senecasisneros target="_blank"><img src="./images/github.png" alt="Github" class="socialImage"></a></li>
       <li><a href=https://twitter.com/sen427 target="_blank"><img src="./images/Twitter_Social.png" alt="Twitter" class="socialImage"></a></li>
       <li><a href=mailto:seneca.sisneros@yahoo.com><img src="./images/Yahoo.png" alt="Yahoo Email" class="socialImage"></a></li>
-    </ul> -->
-  </nav>
+    </ul>
+  </div> -->
+</nav>
 </header>
 
 
@@ -155,66 +161,128 @@
   </section>
 </section>
 
+<!-- <section id="skills">
+<h2 class="hidden">Skills</h2>
+<p>Some text goes here</p>
+</section> -->
+
+<section>
+  <h2 class="hidden">Skills List</h2>
+
+  <article class="skills">
+    <figure class="item">
+      <img class="animated flip icons" src="css/image/javaScript.png" />
+      <figcaption class="caption">JavaScript</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="node" class="animated flip icons" src="css/image/nodejs.png" />
+      <figcaption class="caption">Node.js</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="express" class="animated flip icons" src="css/image/express.png" />
+      <figcaption class="caption">Express</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="mongo" class="animated flip icons" src="css/image/Mongo.png" />
+      <figcaption class="caption">MongoDB</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="html" class="animated flip icons" src="css/image/html5.svg" />
+      <figcaption class="caption">HTML5</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="css" class="animated flip icons" src="css/image/css3.svg" />
+      <figcaption class="caption">CSS3</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="bootstrap" class="animated flip icons" src="css/image/bootstrap.png" />
+      <figcaption class="caption">Bootstrap</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="react" class="animated flip icons" src="css/image/react.png" />
+      <figcaption class="caption">ReactJS</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="flux" class="animated flip icons" src="css/image/flux.png" />
+      <figcaption class="caption">Flux</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="redux" class="animated flip icons" src="css/image/redux.png" />
+      <figcaption class="caption">Redux</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="mysql" class="animated flip icons" src="css/image/sql.png" />
+      <figcaption class="caption">SQL</figcaption>
+    </figure>
+    <figure class="item">
+      <img id="jQuery" class="animated flip icons" src="css/image/jquery-icon.png" />
+      <figcaption class="caption">jQuery</figcaption>
+    </figure>
+  </article>
+<br class="clear"/>
+</section>
+
+
 <section id="four_columns">
   <h2>
     Portfolio
   </h2>
-<article class="img-item">
-  <h3 class="hidden">Dash and Dine</h3>
-  <figure>
-    <a href="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" rel="lightbox" title="Dash and Dine">
-      <span class="thumb-screen"></span>
-      <img src="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" alt="Video of Dash and Dine App"/>
-    </a>
-    <figcaption>
-      <strong>
-        Dash and Dine
-      </strong>
-      <strong>
-        React, Redux, HTML5, CSS3, Node.js, Express.js, MongoDB, Bootstrap, Babel, Webpack and Eslint
-      </strong>
-      A project, in collaboration with 3 other developers, that allows you to search by location, to get a restaurant suggestion at random. It provides the contact information, rating, map, and even the current weather for that location.
-    </figcaption>
-  </figure>
-</article>
-<article class="img-item">
-  <h3 class="hidden">Museo</h3>
-  <figure>
-    <a href="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" rel="lightbox" title="Museo">
-      <span class="thumb-screen"></span>
-      <img src="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" alt="Video of Museo app"/>
-    </a>
-    <figcaption>
-      <strong>
-        Museo
-      </strong>
-      <strong>
-        Javascript, React, Flux, HTML5, CSS3, Node.js, Express.js, MongoDB, Babel, Webpack, Eslint, Bootstrap and Materialize.
-      </strong>
-      An application that allows you to search by artist or song name and will produce the corresponding music video and lyrics.
-    </figcaption>
-  </figure>
-</article>
-<article class="img-item">
-  <h3 class="hidden">The Mysterious Moon</h3>
-  <figure>
-    <a href="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" rel="lightbox" title="The Mysterious Moon">
-      <span class="thumb-screen"></span>
-      <img src="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" alt="Video of The Mysterious Moon app"/>
-    </a>
-    <figcaption>
-      <strong>
-        The Mysterious Moon
-      </strong>
-      <strong>
-        Javascript, React, HTML5, CSS3, Node.js, Babel, Bootstrap,Webpack and Eslint.
-      </strong>
-      You can search by zip code to return the current moon phase and Additional information about the moon’s location and associated spiritual meaning.
-      Vist the website
-    </figcaption>
-  </figure>
-</article>
-<br class="clear"/>
+  <article class="img-item">
+    <h3 class="hidden">Dash and Dine</h3>
+    <figure>
+      <a href="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" rel="lightbox" title="Dash and Dine">
+        <span class="thumb-screen"></span>
+        <img src="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" alt="Video of Dash and Dine App"/>
+      </a>
+      <figcaption class="portfolio_items">
+        <strong>
+          Dash and Dine
+        </strong>
+        <strong>
+          React, Redux, HTML5, CSS3, Node.js, Express.js, MongoDB, Bootstrap, Babel, Webpack and Eslint
+        </strong>
+        A project, in collaboration with 3 other developers, that allows you to search by location, to get a restaurant suggestion at random. It provides the contact information, rating, map, and even the current weather for that location.
+      </figcaption>
+    </figure>
+  </article>
+  <article class="img-item">
+    <h3 class="hidden">Museo</h3>
+    <figure>
+      <a href="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" rel="lightbox" title="Museo">
+        <span class="thumb-screen"></span>
+        <img src="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" alt="Video of Museo app"/>
+      </a>
+      <figcaption class="portfolio_items">
+        <strong>
+          Museo
+        </strong>
+        <strong>
+          Javascript, React, Flux, HTML5, CSS3, Node.js, Express.js, MongoDB, Babel, Webpack, Eslint, Bootstrap and Materialize.
+        </strong>
+        An application that allows you to search by artist or song name and will produce the corresponding music video and lyrics.
+      </figcaption>
+    </figure>
+  </article>
+  <article class="img-item">
+    <h3 class="hidden">The Mysterious Moon</h3>
+    <figure>
+      <a href="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" rel="lightbox" title="The Mysterious Moon">
+        <span class="thumb-screen"></span>
+        <img src="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" alt="Video of The Mysterious Moon app"/>
+      </a>
+      <figcaption class="portfolio_items">
+        <strong>
+          The Mysterious Moon
+        </strong>
+        <strong>
+          Javascript, React, HTML5, CSS3, Node.js, Babel, Bootstrap,Webpack and Eslint.
+        </strong>
+        You can search by zip code to return the current moon phase and Additional information about the moon’s location and associated spiritual meaning.
+        Vist the website
+      </figcaption>
+    </figure>
+  </article>
+  <br class="clear"/>
 </section>
 
 <footer>
