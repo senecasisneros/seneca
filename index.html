@@ -1,57 +1,35 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seneca Sisneros</title>
-  <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seneca Sisneros Website" />
+  <link href="http://allfont.net/allfont.css?fonts=amatic-bold" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" media="all" href="css/style.css" />
   <link href="lightbox/css/lightbox.css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'>
-
-  <script src="js/vendor/modernizr.min.js"></script>
-  <script src="js/vendor/respond.min.js"></script>
-
-  <!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
-  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js\/vendor\/1.7.2.jquery.min.js"><\/script>')</script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="parallax.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://www.solodev.com/assets/parallax/jquery.localscroll-1.2.7-min.js"></script>
+  <script src="https://www.solodev.com/assets/parallax/jquery.parallax-1.1.3.js"></script>
+  <script src="https://www.solodev.com/assets/parallax/jquery.scrollTo-1.4.2-min.js"></script>
+  <script src="scrolling.js"></script>
+  <script src="js/modernizr.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js\/1.7.2.jquery.min.js"><\/script>')</script>
 
   <script src="lightbox/js/lightbox.js"></script>
-  <script src="js/vendor/prefixfree.min.js"></script>
-  <script src="js/vendor/jquery.slides.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
   <script src="js/script.js"></script>
-  <script>
-  $(function() {
-    $('#slides').slidesjs({
-      height: 330,
-      // height: 235,
-      navigation: false,
-      pagination: false,
-      effect: {
-        fade: {
-          speed: 400
-        }
-      },
-      callback: {
-        start: function(number) {
-          $("#slider_content1,#slider_content2,#slider_content3").fadeOut(500);
-        },
-        complete: function(number) {
-          // $("#slider_content" + number);
-          // $("#slider_content" + number).delay(500).fadeIn(1000);
-          $("#slider_content" + number).fadeIn(0.0001);
-        }
-      },
-      play: {
-        active: false,
-        auto: true,
-        interval: 6000,
-        pauseOnHover: false,
-        effect: "fade"
-      }
-    });
-  });
-  </script>
+</head>
+<body>
 </head>
 
 <body>
@@ -69,7 +47,7 @@
       </ul>
     </div>
 
-    <h1>Seneca Sisneros</h1>
+    <h1 class="mainHeader">Seneca Sisneros</h1>
     <p>Full-Stack Javascript Web Developer</p>
     <nav>
       <h2 class="hidden">Our navigation</h2>
@@ -81,214 +59,189 @@
           <li><a href="#four_columns">Portfolio</a></li>
         </ul>
       </div>
-
-      <!-- <div class="nav-right">
-      <ul class="pull-right nav navbar-nav">
-      <li><a href=https://www.linkedin.com/in/seneca-sisneros target="_blank"><img src="./images/linkedin.png" alt="LinkedIn" class="socialImage"></a></li>
-      <li><a href=https://www.linkedin.com/in/seneca-sisneros target="_blank"><img src="./images/linkedin.png" alt="LinkedIn" class="socialImage"></a></li>
-      <li><a href=https://github.com/senecasisneros target="_blank"><img src="./images/github.png" alt="Github" class="socialImage"></a></li>
-      <li><a href=https://twitter.com/sen427 target="_blank"><img src="./images/Twitter_Social.png" alt="Twitter" class="socialImage"></a></li>
-      <li><a href=mailto:seneca.sisneros@yahoo.com><img src="./images/Yahoo.png" alt="Yahoo Email" class="socialImage"></a></li>
-    </ul>
-  </div> -->
-</nav>
-</header>
+    </nav>
+  </header>
 
 
-<section class="container">
-  <h2 class="hidden">Main Page images</h2>
-  <article id="slider_content1">
-    <h3>Seneca Sisneros</h3>
-    <p>Full-Stack Javascript Web Developer</p>
-  </article>
-  <article id="slider_content2">
-    <h3>Seneca Sisneros</h3>
-    <p>Full-Stack Javascript Web Developer</p>
-  </article>
-  <article id="slider_content3">
-    <h3>Seneca Sisneros</h3>
-    <p>Full-Stack Javascript Web Developer</p>
-  </article>
-  <div id="slides">
-    <img class="roadImages" src="https://s3.amazonaws.com/website-seneca/asphalt2.jpg" alt="Some alt text">
-    <img class="deskImages" src="https://s3.amazonaws.com/website-seneca/computerDesk.jpg" alt="Some alt text">
-    <img class="venturaImages" src="https://s3.amazonaws.com/website-seneca/ventura_rocks.jpg" alt="Some alt text">
+  <div id="intro">
+    <div class="story">
+      <div class="left">
+        <section id="text_columns">
+          <h2 class="hidden">About me</h2>
+          <article class="mainPage">
+            <h1 id="name" className="animated fadeInUpBig">Hi! I'm Seneca</h1>
+            <h5 id="title">I'm a Full-Stack Javascript Web Developer</h5>
+            <img className="animated zoomIn" id="profilePic" src="https://s3.amazonaws.com/website-seneca/senecaPic.jpg" />
+            <!-- <h3>About Me</h3> -->
+            <h4 id="aboutMeText"> If someone would have come to me a few years ago and told me my life was about to take a 180-degree turn, and that my days working at the Bank were numbered, I would have laughed it off to cover up the anxiety of the very thought. At that time, I had already spent nearly 10 years building a career with the Bank, navigating my way through sales and lending, all while trying to climb the corporate ladder. So, the very thought that all of that would someday be gone, especially if by my own choice, would most definitely not be something I saw as a positive impact on my future.
+              Don’t get me wrong, my time at the Bank provided me with years of experience, and a set of invaluable skills that have helped me get where I am today. But despite that, there was something big missing from my definition of success. Eventually I did come to realize the true meaning of Casey Neitstat’s quote. What I considered safe, was actually the most dangerous thing I could do. For that reason, I decided it was time for me to make a big change and take a chance to discover what I was missing. It was time for me to discover my passion and pursue my dream of working in the tech industry. A decision that has helped shape the person I am today.
+              So, who exactly am I? Well, I’m definitely more than just a self- taught Full-Stack Web Developer. I’m an individual who went through a massive personal and professional transformation over the past few years that I am extremely grateful for. A transformation, that not only challenged me, but helped me identify my strengths and weaknesses, and helped me learn how to work them to my advantage. I am also a self-motivated, passionate individual that doesn’t give up easily. I am a person that willingly gave up all comfort and financial security and placed a bet on myself, knowing I needed, and wanted, to make a bigger contribution in this world. I love hanging out with my two spoiled dogs, exploring new places, kickboxing, juicing and crystals. I push myself every day to learn something new, grow my faith and challenge myself to become a better person. This is just the start of my journey, and I’m excited to see what comes next.
+            </h4>
+          </article>
+          <!-- <section class="column2">
+          <h3 class="hidden">Pictures</h3>
+          <article class="row right">
+          <h4 class="hidden">Amber and Seneca</h4>
+          <img src="https://s3.amazonaws.com/website-seneca/family1.jpg" alt="Picture of Amber and Seneca"/>
+        </article>
+        <article class="row">
+        <h4 class="hidden">Gabbie and Bella</h4>
+        <img src="https://s3.amazonaws.com/website-seneca/Pups.jpg" id="pupsImg" alt="Picture of Gabbie and Bella"/>
+      </article>
+    </section>
+  </section> -->
+</div>
+<!--.story-->
+
+
+
+</div>
+<!--#intro-->
+<div id="second container">
+  <div class="story">
+    <div class="bg"></div>
+    <div>
+      <section id="four_columns">
+        <h2>
+          Portfolio
+        </h2>
+        <article class="img-item">
+          <h3 class="hidden">Dash and Dine</h3>
+          <figure>
+            <a href="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" rel="lightbox" title="Dash and Dine">
+              <span class="thumb-screen"></span>
+              <img class="portImage" src="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" alt="Video of Dash and Dine App"/>
+            </a>
+            <figcaption class="portfolio_items">
+              <strong>
+                Dash and Dine
+              </strong>
+              <strong>
+                React, Redux, HTML5, CSS3, Node.js, Express.js, MongoDB, Bootstrap, Babel, Webpack and Eslint
+              </strong>
+              <strong>
+                A project, in collaboration with 3 other developers, that allows you to search by location, to get a restaurant suggestion at random. It provides the contact information, rating, map, and even the current weather for that location.
+              </strong>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="img-item">
+          <h3 class="hidden">Museo</h3>
+          <figure>
+            <a href="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" rel="lightbox" title="Museo">
+              <span class="thumb-screen"></span>
+              <img class="portImage" src="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" alt="Video of Museo app"/>
+            </a>
+            <figcaption class="portfolio_items">
+              <strong>
+                Museo
+              </strong>
+              <strong>
+                Javascript, React, Flux, HTML5, CSS3, Node.js, Express.js, MongoDB, Babel, Webpack, Eslint, Bootstrap and Materialize.
+              </strong>
+              <strong>
+                An application that allows you to search by artist or song name and will produce the corresponding music video and lyrics.
+              </strong>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="img-item">
+          <h3 class="hidden">The Mysterious Moon</h3>
+          <figure>
+            <a href="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" rel="lightbox" title="The Mysterious Moon">
+              <span class="thumb-screen"></span>
+              <img class="portImage" src="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" alt="Video of The Mysterious Moon app"/>
+            </a>
+            <figcaption class="portfolio_items">
+              <strong>
+                The Mysterious Moon
+              </strong>
+              <strong>
+                Javascript, React, HTML5, CSS3, Node.js, Babel, Bootstrap,Webpack and Eslint.
+              </strong>
+              <strong>
+                You can search by zip code to return the current moon phase and Additional information about the moon’s location and associated spiritual meaning.
+                Vist the website
+              </strong>
+            </figcaption>
+          </figure>
+        </article>
+        <br class="clear"/>
+      </section>
+    </div>
   </div>
-
-</section>
-
-<!-- <section id="spacer">
-<h2 class="hidden">Spacer</h2>
-<p>Some text goes here</p>
-</section> -->
-
-<!-- <section id="boxcontent">
-<h2 class="hidden">Socail Media Links</h2>
-<article>
-<a href=https://github.com/senecasisneros target="_blank"><img src="./images/github.png" alt="Github" class="socialImage"></a>
-</article>
-<article>
-<a href=https://www.linkedin.com/in/seneca-sisneros target="_blank"><img src="https://png.icons8.com/linkedin/win10/16" title="LinkedIn" alt="LinkedIn" class="socialImage"></a>
-</article>
-<article>
-<a href=https://twitter.com/sen427 target="_blank"><img src="./images/Twitter_Social.png" alt="Twitter" class="socialImage"></a>
-</article>
-<article>
-<a href=mailto:seneca.sisneros@yahoo.com><img src="./images/Yahoo.png" alt="Yahoo Email" class="socialImage"></a>
-</article>
-<br class="clear"/>
-</section> -->
-
-<section id="text_columns">
-  <h2 class="hidden">About me</h2>
-  <article class="column1">
-    <h3>About Me</h3>
-    <h4 id="aboutMeText"> If someone would have come to me a few years ago and told me my life was about to take a 180-degree turn, and that my days working at the Bank were numbered, I would have laughed it off to cover up the anxiety of the very thought. At that time, I had already spent nearly 10 years building a career with the Bank, navigating my way through sales and lending, all while trying to climb the corporate ladder. So, the very thought that all of that would someday be gone, especially if by my own choice, would most definitely not be something I saw as a positive impact on my future.
-      Don’t get me wrong, my time at the Bank provided me with years of experience, and a set of invaluable skills that have helped me get where I am today. But despite that, there was something big missing from my definition of success. Eventually I did come to realize the true meaning of Casey Neitstat’s quote. What I considered safe, was actually the most dangerous thing I could do. For that reason, I decided it was time for me to make a big change and take a chance to discover what I was missing. It was time for me to discover my passion and pursue my dream of working in the tech industry. A decision that has helped shape the person I am today.
-      So, who exactly am I? Well, I’m definitely more than just a self- taught Full-Stack Web Developer. I’m an individual who went through a massive personal and professional transformation over the past few years that I am extremely grateful for. A transformation, that not only challenged me, but helped me identify my strengths and weaknesses, and helped me learn how to work them to my advantage. I am also a self-motivated, passionate individual that doesn’t give up easily. I am a person that willingly gave up all comfort and financial security and placed a bet on myself, knowing I needed, and wanted, to make a bigger contribution in this world. I love hanging out with my two spoiled dogs, exploring new places, kickboxing, juicing and crystals. I push myself every day to learn something new, grow my faith and challenge myself to become a better person. This is just the start of my journey, and I’m excited to see what comes next.
-    </h4>
-  </article>
-  <section class="column2">
-    <h3 class="hidden">Pictures</h3>
-    <article class="row">
-      <h4 class="hidden">Amber and Seneca</h4>
-      <img src="https://s3.amazonaws.com/website-seneca/family1.jpg" alt="Picture of Amber and Seneca"/>
-    </article>
-    <article class="row">
-      <h4 class="hidden">Gabbie and Bella</h4>
-      <img src="https://s3.amazonaws.com/website-seneca/Pups.jpg" id="pupsImg" alt="Picture of Gabbie and Bella"/>
-    </article>
-  </section>
-</section>
-
-<!-- <section id="skills">
-<h2 class="hidden">Skills</h2>
-<p>Some text goes here</p>
-</section> -->
-
-<section class='portfolio'>
-  <h2 class="hidden">Skills List</h2>
-  <article class="skills">
-    <figure class="item">
-      <img class="animated flip icons" src="css/image/javaScript.png" />
-      <figcaption class="caption">JavaScript</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="node" class="animated flip icons" src="css/image/nodejs.png" />
-      <figcaption class="caption">Node.js</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="express" class="animated flip icons" src="css/image/express.png" />
-      <figcaption class="caption">Express</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="mongo" class="animated flip icons" src="css/image/Mongo.png" />
-      <figcaption class="caption">MongoDB</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="html" class="animated flip icons" src="css/image/html5.svg" />
-      <figcaption class="caption">HTML5</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="css" class="animated flip icons" src="css/image/css3.svg" />
-      <figcaption class="caption">CSS3</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="bootstrap" class="animated flip icons" src="css/image/bootstrap.png" />
-      <figcaption class="caption">Bootstrap</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="react" class="animated flip icons" src="css/image/react.png" />
-      <figcaption class="caption">ReactJS</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="flux" class="animated flip icons" src="css/image/flux.png" />
-      <figcaption class="caption">Flux</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="redux" class="animated flip icons" src="css/image/redux.png" />
-      <figcaption class="caption">Redux</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="mysql" class="animated flip icons" src="css/image/sql.png" />
-      <figcaption class="caption">SQL</figcaption>
-    </figure>
-    <figure class="item">
-      <img id="jQuery" class="animated flip icons" src="css/image/jquery-icon.png" />
-      <figcaption class="caption">jQuery</figcaption>
-    </figure>
-  </article>
-  <br class="clear"/>
-</section>
+  <!--.story-->
+</div>
 
 
-<section id="four_columns">
-  <h2>
-    Portfolio
-  </h2>
-  <article class="img-item">
-    <h3 class="hidden">Dash and Dine</h3>
-    <figure>
-      <a href="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" rel="lightbox" title="Dash and Dine">
-        <span class="thumb-screen"></span>
-        <img class="portImage" src="https://media.giphy.com/media/l0IyaY7uyHmNH2rFC/giphy.gif" alt="Video of Dash and Dine App"/>
-      </a>
-      <figcaption class="portfolio_items">
-        <strong>
-          Dash and Dine
-        </strong>
-        <strong>
-          React, Redux, HTML5, CSS3, Node.js, Express.js, MongoDB, Bootstrap, Babel, Webpack and Eslint
-        </strong>
-        <strong>
-          A project, in collaboration with 3 other developers, that allows you to search by location, to get a restaurant suggestion at random. It provides the contact information, rating, map, and even the current weather for that location.
-        </strong>
-      </figcaption>
-    </figure>
-  </article>
-  <article class="img-item">
-    <h3 class="hidden">Museo</h3>
-    <figure>
-      <a href="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" rel="lightbox" title="Museo">
-        <span class="thumb-screen"></span>
-        <img class="portImage" src="https://media.giphy.com/media/l0Iy8kNUp4r9e0rBu/giphy.gif" alt="Video of Museo app"/>
-      </a>
-      <figcaption class="portfolio_items">
-        <strong>
-          Museo
-        </strong>
-        <strong>
-          Javascript, React, Flux, HTML5, CSS3, Node.js, Express.js, MongoDB, Babel, Webpack, Eslint, Bootstrap and Materialize.
-        </strong>
-        <strong>
-          An application that allows you to search by artist or song name and will produce the corresponding music video and lyrics.
-        </strong>
-      </figcaption>
-    </figure>
-  </article>
-  <article class="img-item">
-    <h3 class="hidden">The Mysterious Moon</h3>
-    <figure>
-      <a href="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" rel="lightbox" title="The Mysterious Moon">
-        <span class="thumb-screen"></span>
-        <img class="portImage" src="https://media.giphy.com/media/l4FGFIAFpQpZC4mw8/giphy.gif" alt="Video of The Mysterious Moon app"/>
-      </a>
-      <figcaption class="portfolio_items">
-        <strong>
-          The Mysterious Moon
-        </strong>
-        <strong>
-          Javascript, React, HTML5, CSS3, Node.js, Babel, Bootstrap,Webpack and Eslint.
-        </strong>
-        <strong>
-          You can search by zip code to return the current moon phase and Additional information about the moon’s location and associated spiritual meaning.
-          Vist the website
-        </strong>
-      </figcaption>
-    </figure>
-  </article>
-  <br class="clear"/>
-</section>
+
+
+
+<!--#second-->
+<div id="third">
+  <div class="story">
+    <div>
+      <section class='skillsMain'>
+        <h2 class="hidden">Skills List</h2>
+        <article class="skills">
+          <figure class="item">
+            <img class="animated flip icons" src="css/image/javaScript.png" />
+            <figcaption class="caption">JavaScript</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="node" class="animated flip icons" src="css/image/nodejs.png" />
+            <figcaption class="caption">Node.js</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="express" class="animated flip icons" src="css/image/express.png" />
+            <figcaption class="caption">Express</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="mongo" class="animated flip icons" src="css/image/Mongo.png" />
+            <figcaption class="caption">MongoDB</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="html" class="animated flip icons" src="css/image/html5.svg" />
+            <figcaption class="caption">HTML5</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="css" class="animated flip icons" src="css/image/css3.svg" />
+            <figcaption class="caption">CSS3</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="bootstrap" class="animated flip icons" src="css/image/bootstrap.png" />
+            <figcaption class="caption">Bootstrap</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="react" class="animated flip icons" src="css/image/react.png" />
+            <figcaption class="caption">ReactJS</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="flux" class="animated flip icons" src="css/image/flux.png" />
+            <figcaption class="caption">Flux</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="redux" class="animated flip icons" src="css/image/redux.png" />
+            <figcaption class="caption">Redux</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="mysql" class="animated flip icons" src="css/image/sql.png" />
+            <figcaption class="caption">SQL</figcaption>
+          </figure>
+          <figure class="item">
+            <img id="jQuery" class="animated flip icons" src="css/image/jquery-icon.png" />
+            <figcaption class="caption">jQuery</figcaption>
+          </figure>
+        </article>
+        <br class="clear"/>
+      </section>
+
+    </div>
+  </div>
+  <!--.story-->
+</div>
+<!--#third-->
+
 
 <footer>
   <h2 class="hidden">Our footer</h2>
@@ -303,7 +256,7 @@
       </div>
       &copy; Copyright 2014 by <a href="www.senecasisneros.com">Seneca Sisneros</a>. All Rights Reserved.
     </div>
-  </section>
+  <!-- </section>
   <section class="wrapper">
     <h3 class="hidden">Footer content</h3>
     <article class="column">
@@ -311,7 +264,7 @@
       Some text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes here
     </article>
     <article class="column midlist">
-      <h4>Title</h4>
+      <h4>Contact Me</h4>
       <ul>
         <li><a href="javascript:void(0)">Home</a></li>
         <li><a href="javascript:void(0)">About</a></li>
@@ -319,7 +272,7 @@
         <li><a href="javascript:void(0)">Portfolio</a></li>
       </ul>
     </article>
-    <!-- <article class="column rightlist">
+    <article class="column rightlist">
     <h4>Dolor sit amet</h4>
     <ul>
     <li><a href="javascript:void(0)"><img src="https://s3.amazonaws.com/website-seneca/asphalt2.jpg" width="80" alt="Some alt text"/><span>Unterwegs traf es eine Copy. Die Copy warnte.</span></a></li>
@@ -327,8 +280,10 @@
     <li><a href="javascript:void(0)"><img src="https://s3.amazonaws.com/website-seneca/ventura_rocks.jpg" width="80" alt="Some alt text"/><span>Und es dann in ihre Agentur schleppten.</span></a></li>
   </ul>
   <br class="clear"/>
-</article> -->
-</section>
+</article>
+</section> -->
 </footer>
+
 </body>
+
 </html>
