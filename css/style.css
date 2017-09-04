@@ -86,10 +86,11 @@ color: #48941A;
   }
 
   #second{
-    background: url(image/ventura-rocks2.png) 50% 0 no-repeat fixed;
+    background-color: black;
+    /*background: url(image/ventura-rocks2.png) 50% 0 no-repeat fixed;*/
     background-size: cover;
     color: black;
-    height: 1300px;
+    height: 850px;
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
@@ -226,22 +227,31 @@ color: #48941A;
   }
 
   .row {
-    position:relative;
+    /*margin-right:25px;*/
+
+    /*position:relative;*/
     /*margin: 0 0 0 50px;*/
-    float: right;
-    width: 280px;
+    float: left;
+    /*width: 280px;*/
+
   }
 
   .row img {
     /*float:left;*/
-    width: 80%;
-    height: auto;
+    width: 250px;
+    height: 250px;
+    /*margin-right: 50px*/
+    margin: 30px 0 0 50px;
   }
 
-  #pupsImg {
-    width: 60%;
-    height: auto;
+  .imageSection {
+    margin-left: 20%;
   }
+
+  /*#pupsImg {
+  width: 60%;
+  height: auto;
+  }*/
 
   #text_columns article.column1, #text_columns .column2 {
     float:none;
@@ -330,6 +340,7 @@ color: #48941A;
     font-size: 10px;
     width: 393px;
     color: white;
+    margin-bottom: 85px;
   }
 
 
