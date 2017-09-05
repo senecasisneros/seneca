@@ -43,7 +43,7 @@ strong {
   height: 600px;
   margin: 0 auto;
   padding: 0;
-  width: 100%;π
+  width: 100%;
 }
 
 #second {
@@ -78,11 +78,26 @@ overflow: hidden;
   background: url(image/ventura-rocks2.png) 50% 0 no-repeat fixed;
   background-size: cover;
   color: black;
-  height: 100%;
-  padding: 100px 0 0 0;
+  /*height: 100%;*/
+  height: 650px;
+  /*padding: 100px 0 0 0;*/
+  padding: 5px 0 0 0;
   width: 100%;
-  overflow: hidden;
-  padding: 0;
+  /*overflow: hidden;*/
+  /*padding: 0;*/
+}
+#fourth {
+  background: url(https://s3.amazonaws.com/website-seneca/computerDesk.jpg) 50% 0 no-repeat fixed;
+  /*background: url(image/ventura-rocks2.png) 50% 0 no-repeat fixed;*/
+  background-size: cover;
+  color: black;
+  /*height: 100%;*/
+  height: 650px;
+  /*padding: 100px 0 0 0;*/
+  padding: 5px 0 0 0;
+  width: 100%;
+  /*overflow: hidden;*/
+  /*padding: 0;*/
 }
 
 .story {
@@ -238,6 +253,8 @@ height: auto;
 
 #skills {
   text-align: center;
+  margin-top: 50px;
+
 }
 
 figure.item {
@@ -248,6 +265,7 @@ figure.item {
 }
 
 .icons {
+  margin-top: 40px;
   width: 100px;
   height: 100px;
 }
@@ -482,11 +500,21 @@ footer .wrapper .column h4 {
 #quote {
   /*font-family: 'Rancho', cursive;*/
   font-family: 'Baumans', cursive;
-  font-size: 16px;
+  font-size:24px;
   color: white;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#quote2 {
+  font-family: 'Baumans', cursive;
+  font-size: 16px;
+  color: white;
+  /*margin-top: 10px;*/
+  text-align: right;
+  margin-left: 10px;
+  /*margin-bottom: 20px;*/
 }
 
 #profilePic {
@@ -540,7 +568,7 @@ footer .wrapper .column h4 {
 }
 
 .skillsPort {
-  margin-top: 30px;
+  /*margin-top: 30px;*/
 }
 
 
