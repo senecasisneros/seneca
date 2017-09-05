@@ -225,7 +225,6 @@ height: auto;
   width:auto;
 }
 
-
 .column2 .row {
   float:none;
   margin:0 0 40px 50px;
@@ -233,6 +232,11 @@ height: auto;
 
 .skills {
   clear: both;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#skills {
   text-align: center;
 }
 
@@ -294,17 +298,19 @@ figure.item {
 
 
 #four_columns h2, #text_columns h3 {
-  font-size:20px;
+  font-size: 35px;
   padding: 20px 0;
   margin-bottom: 20px;
   color: black;
+  text-align: center;
 }
 
 #four_columns {
   float: left;
   margin-left: 25px;
-  position:relative;
-  display:block;
+  margin-top: 25px;
+  position: relative;
+  display: block;
 }
 
 #four_columns .img-item
@@ -533,7 +539,9 @@ footer .wrapper .column h4 {
   /*margin-left:75px;*/
 }
 
-
+.skillsPort {
+  margin-top: 30px;
+}
 
 
 ////////////////////////////////////
@@ -637,21 +645,26 @@ footer .wrapper .column h4 {
   input[type="submit"] {
     padding: 1px 14px;
   }
+
   #four_columns {
     width: 500px;
   }
+
   #four_columns .img-item:nth-of-type(3), #four_columns .img-item:nth-of-type(4) {
     margin-top: 25px;
   }
+
   #text_columns article.column1, #text_columns .column2 {
     float:none;
     max-width: 500px;
     margin: 50px 30px 0 30px;
   }
+
   .column2 .row {
     float:none;
     margin:0 0 40px 50px;
   }
+
   footer .wrapper .column {
     font-size: 12px;
     width: 230px;
