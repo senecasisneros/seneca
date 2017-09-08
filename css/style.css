@@ -1,321 +1,212 @@
-/*@charset "utf-8";*/
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  min-width: 980px;
-  padding: 0;
-}
-
-a {
-  text-decoration:none;
-  color:inherit;
-  transition: color .5s ease;
-}
-
-strong {
-  font-weight:bold;
-}
-
-
-/* HEADER */
-
-header {
+  background-color: #FFF;
+  font-size: 18px;
   position: relative;
-  width: auto;
-  max-width: 900px;
-  margin: 0 auto 20px auto;
+  font-family: 'Love Ya Like A Sister', cursive;
 }
 
-header h1 {
-  margin: 35px 0 0 0;
-  font-size: 55px;
-  color: #e56038;
-  font-family: 'Baumans', cursive;
+.mainSocial {
+  margin-top: 2%;
 }
 
-header p {
-  font-family: 'Baumans', cursive;
-  font-size: 16px;
-  color: black;
-  margin-left: 132px;
-}
-
-.mainHeader {
-  margin: 35px 0 0 0;
-  font-size: 55px;
-  color: black;
-  font-family: 'Baumans', cursive;
-}
-
-/*NAV*/
-
-#nav {
-  list-style: none;
-  position: fixed;
-  right: 20px;
-}
-
-#nav li {
-  margin: 0 0 15px 0;
-}
-
-nav {
-position: absolute;
-right: 0;
-bottom: 0;
-}
-
-nav ul {
-list-style:none;
-}
-
-nav ul li {
-  display: block;
-  float: left;
-  padding: 3px 15px;
-  color: black;
-}
-
-nav ul li a {
-font-family: 'Baumans', cursive;
-text-transform: uppercase;
-transition: all .25s ease;
-}
-
-nav ul li a:hover {
-  color:#E56038;
-}
-
-#header, #second {
-  width: 100%;
-}
-
-
-/*INTRO*/
-
-#intro {
-  background:url(https://s3.amazonaws.com/website-seneca/asphalt2.jpg) 50% 0 no-repeat fixed;
-  background-size: cover;
-  color: white;
-  height: 600px;
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-}
-
-.mainPage {
-  margin-top: 10px;
-  text-align: center;
-}
-
-#profilePic {
-  height: 20%;
-  width: 20%;
+#ventura {
+  padding-top: 35px;
 }
 
 #name {
-  font-family: 'Baumans', cursive;
-  /*font-family: 'Amatic Bold', arial;*/
-  font-size: 68px;
-  padding-top: 45px;
-  text-shadow: 4px 4px 4px #aaa;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 250%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 4px 4px 4px gray;
+
 }
 
-#title {
-  font-family: 'Baumans', cursive;
-  /*font-family: 'Amatic Bold', arial;*/
-  font-size: 25px;
-  margin-top: 15px;
-  text-shadow: 4px 4px 4px #aaa;
-}
-
-
-#profilePic {
-  border-radius: 50%;
-  margin-top: 15px;
-}
-
-.story {
-  margin: 0 auto;
-  min-width: 980px;
-  overflow: auto;
-  width: 980px;
-}
-
-#text_columns article.column1, #text_columns .column2 {
-  float:none;
-}
-
-#text_columns {
-  line-height: 25px;
-  /*font-family: 'Open Sans', sans-serif;*/
-  font-family: 'Baumans', cursive;
-  clear: both;
-  width: auto;
-  margin: 1% 5%;
-}
-
-#text_columns .column2 {
-  margin: 120px 0;
-}
-
-#text_columns article.column1, #text_columns .column2 {
-  font-size: 14px;
-  float: left;
-  width: auto;
-  color: white;
-}
-/*margin: 70px 0;
-max-width: 450px;*/
-
-
-/*SECOND/ABOUT ME*/
-
-#second {
-  /*background-color: #404040;*/
-  background-color: #1D1D1D;
-  /*background: url(image/ventura-rocks2.png) 50% 0 no-repeat fixed;*/
-  background: url(https://s3.amazonaws.com/website-seneca/color.png) 50% 0 no-repeat fixed;
-  background-size: cover;
-  color: black;
-  /*height: 700px;*/
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0;
-  width: 100%;
-}
-
-/*#second .bg {
-background: url(https://cdn.pixabay.com/photo/2016/02/18/04/13/motorhome-1206525_1280.jpg) 50% 0 no-repeat fixed;
-height: 1300px;
-margin: 0 auto;
-padding: 0;
-position: absolute;
-z-index: 200;
-max-width: 1900px;
-width: 100%;
-overflow: hidden;
+/*h3 {
+text-align: center;
+color: #4A4444;
+text-transform: uppercase;
+letter-spacing: 1%;
 }*/
 
-#aboutMeText {
-  /*font-family: 'Amatic Bold', arial;*/
-  /*line-height: 33px;*/
-  font-size: 20px;
-  color: white;
-  margin: 20px;
+#title {
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 120%;
+  text-align: center;
+  color: #4A4444;
+  letter-spacing: 1%;
+  margin-top: 1%;
 }
 
 #quote {
-  /*font-family: 'Rancho', cursive;*/
-  font-family: 'Baumans', cursive;
-  font-size: 24px;
-  color: white;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 150%;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  color: #4A4444;
+  letter-spacing: 1%;
+  margin-top: 1%;
+  font-family: 'Love Ya Like A Sister', cursive;
 }
 
-#quote2 {
-  font-family: 'Baumans', cursive;
-  font-size: 16px;
-  color: white;
-  /*margin-top: 10px;*/
-  text-align: right;
-  margin-left: 10px;
-  /*margin-bottom: 20px;*/
+.contact:hover {
+  opacity: 0.7;
+}
+
+p {
+  padding: 2%;
+  color: #4A4444;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#banner-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slider1 img {
+  min-width: 100%;
+  margin: -5px auto;
+}
+
+.slider .bx-wrapper .bx-controls-direction a {
+  outline: 0 none;
+  position: absolute;
+  text-indent: -9999px;
+  top: 40%;
+  height: 71px;
+  width: 40px;
+  z-index: -1;
+  transition: all 0.7s;
+}
+
+.one-half {
+  width: 44%;
+  float: left;
+  margin: 5% 0 3% 4%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.one-third {
+  width: 28%;
+  float: left;
+  margin: 2% 0 3% 4%;
+  text-align: center;
+}
+
+.mainPage {
+  margin: 2% 0;
+  text-align: center;
 }
 
 .images {
-  width: 20%;
-  height: 20%;
-  margin: 20px;
+  width: 17%;
+  margin-top: 3%;
   border-radius: 10%;
 }
 
-#boxcontent {
-  width: auto;
-  margin: 45px;
-  /*max-width:900px;*/
-  /*margin:0 auto;*/
-  /*padding:70px 0 45px 0;*/
-}
-
-#boxcontent article {
+.left-col {
+  width: 60%;
   float: left;
-  margin-right: 45px;
-  font-size: 14px;
-  /*width:250px;*/
+  margin: 2% 0 4% 4%;
 }
 
-#boxcontent article h3 {
-  font-family: 'Baumans', cursive;
-  font-size: 20px;
-  margin-bottom: 10px;
-  margin-left: 75px;
-}
-
-#boxcontent article img {
+.sidebar {
+  width: 26%;
   float: right;
-  /*float:left;*/
+  margin: 4%;
 }
 
-#boxcontent article p {
-  line-height: 25px;
-  font-family: 'Baumans', cursive;
-  /*margin-left:75px;*/
+.profilePic {
+  border-radius: 10%;
+  width: 50%;
 }
 
-.column2 .row {
-  margin: 0 0 40px 10px;
-  width: auto;
+.clearfix {
+  clear: both;
 }
 
-.column2 .row {
-  float: none;
-  margin: 0 0 40px 50px;
+.parallax-1 {
+  background: url("image/color.png") repeat fixed 100%;
+  text-align: center;
 }
 
+.parallax-inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+}
 
+.parallax-2 {
+  background: url("image/laptop-photo.jpeg") repeat fixed 100%;
+  text-align: center;
+}
 
-/*THIRD/SKILLS*/
-
-#third {
-  /*background: url(https://s3.amazonaws.com/website-seneca/computerDesk.jpg) 50% 0 no-repeat fixed;*/
-  background: url(image/ventura-rocks2.png) 50% 0 no-repeat fixed;
-  background-size: cover;
-  color: black;
-  height: 650px;
-  padding: 5px 0 0 0;
-  width: 100%;
-  /*padding: 100px 0 0 0;*/
-  /*height: 100%;*/
-  /*overflow: hidden;*/
+.parallax-inner h3, .parallax-inner p {
+  color: white;
+  text-shadow: 4px 4px 4px black;
 }
 
 .skills {
-  clear: both;
   text-align: center;
-  margin-top: 40px;
+  margin: 0;
 }
 
 #skills {
   text-align: center;
-  margin-top: 50px;
   font-size: 35px;
-  font-family: 'Baumans', cursive;
+}
+
+#skillsHeader {
+  font-family: 'Love Ya Like A Sister', cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 3%;
+}
+#aboutHeader {
+  font-family: 'Love Ya Like A Sister', cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 3%;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+}
+
+#portHeader {
+  font-size: 40px;
+  margin-top: 3%;
 }
 
 .icons {
-  margin-top: 40px;
   width: 100px;
   height: 100px;
+  margin: 3% 2%;
 }
 
 .caption {
   display: block;
   color: black;
   font-size: 18px;
-  font-family: 'Baumans', cursive;
 }
 
 figure.item {
@@ -323,123 +214,8 @@ figure.item {
   display: inline-block;
   text-align: center;
   width: 120px;
+  margin: 4% 1%;
 }
-
-
-
-/*FOURTH/PORTFOLIO*/
-
-#fourth {
-  background: url(https://s3.amazonaws.com/website-seneca/computerDesk.jpg) 50% 0 no-repeat fixed;
-  /*background: url(image/ventura-rocks2.png) 50% 0 no-repeat fixed;*/
-  background-size: cover;
-  color: black;
-  height: 650px;
-  padding: 5px 0 0 0;
-  width: 100%;
-  /*height: 100%;*/
-  /*padding: 100px 0 0 0;*/
-  /*overflow: hidden;*/
-}
-
-.img-item a {
-  position: relative;
-  display: block;
-}
-
-.thumb-screen {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 113px;
-  background: #000 url(img/zoom.png) center center no-repeat;
-  z-index: 99;
-  opacity: 0;
-  transition: opacity .5s ease;
-}
-
-.thumb-screen:hover {
-  opacity: 0.5;
-}
-
-.portfolio_items strong {
-  border-bottom: 1px solid white;
-  padding-bottom:10px;
-  margin: 10px 0;
-  display: block;
-  color: black;
-  text-align: center;
-  font-family: 'Baumans', cursive;
-  font-weight: bold;
-  /*max-width: 70%;*/
-}
-
-.portfolio_items {
-  line-height: 25px;
-  font-size: 14px;
-  width: 393px;
-  color: white;
-}
-
-#four_columns h2, #text_columns h3 {
-  font-size: 35px;
-  padding: 20px 0;
-  margin-bottom: 20px;
-  color: black;
-  text-align: center;
-  font-family: 'Baumans', cursive;
-  margin-left: 90px;
-}
-/*border-bottom: 1px solid #D6D0C1;*/
-
-#four_columns {
-  float: left;
-  margin-left: 25px;
-  margin-top: 25px;
-  position: relative;
-  display: block;
-}
-
-#four_columns .img-item {
-  float: left;
-  margin-right: 25px;
-}
-
-#four_columns .img-item a {
-  position: relative;
-  display: block;
-}
-
-
-
-/*MOBILE*/
-#mobileMenu ul li {
-  display: block;
-  background-color: #E56038;
-  color: #fff;
-  padding: 12px 0;
-  letter-spacing: 0.1em;
-  text-align: center;
-  text-transform: uppercase;
-  border-bottom: 1px solid #CC5836;
-}
-
-.toggleMobile {
-  display: none;
-}
-
-#mobileMenu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: none;
-}
-
-
-/* FOOTER */
 
 footer {
   position:relative;
@@ -459,7 +235,7 @@ footer .wrapper {
 }
 
 footer .wrapper .column {
-  font-family: 'Baumans', cursive;
+  font-family: 'Love Ya Like A Sister', cursive;
   color:#ababab;
   float:left;
   width:280px;
@@ -518,7 +294,7 @@ footer .wrapper .column h4 {
 }
 
 #copyright .wrapper {
-  font-family: 'Baumans', cursive;
+  font-family: 'Love Ya Like A Sister', cursive;
   padding-top:25px;
   color: #5e5e5e;
   font-size:14px;
@@ -528,12 +304,11 @@ footer .wrapper .column h4 {
 #copyright .wrapper .social {
   position:absolute;
   right:0;
-  top:25px;
+  top: 18px;
 }
 
 #copyright .wrapper .social a {
   transition: opacity .25s ease;
-  opacity: 0.3;
   margin-left: 12px;
   display:block;
   float:left;
@@ -562,232 +337,181 @@ footer .wrapper .column h4 {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.portButtons {
+  margin: 30px auto;
+  text-align: center;
+}
 
-/* MEDIA QUERIES FOR A RESPONSIVE LAYOUT */
+.portLi {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
 
-@media (max-width: 1215px) {
-  #slider_content1, #slider_content2, #slider_content3 {
-    width: auto;
-    margin-right: 50px;
-  }
-  #slider_content1 h2, #slider_content2 h2, #slider_content3 h2 {
-    font-size: 18px;
-  }
-  #slider_content1 p, #slider_content2 p, #slider_content3 p {
-    font-size: 14px;
-  }
-  #slider_content1 p .responsive_button, #slider_content2 p .responsive_button, #slider_content3 p  .responsive_button {
-    display: inline;
-  }
-  .container .button {
+@-moz-keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+@-webkit-keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+@-o-keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+.round {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 18px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  text-shadow: 0 1px 0 rgba(255,255,255,.7);
+  letter-spacing: -.065em;
+  font-family: "Hammersmith One", sans-serif;
+  -webkit-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+  border-radius: 300px;
+  z-index: 1;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.round:hover {
+  width: 130%;
+  height: 130%;
+  left: -15%;
+  top: -15%;
+  font-size: 33px;
+  padding-top: 38px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+  -o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+  -moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+  box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+  z-index: 2;
+  border-size: 10px;
+  -webkit-transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+
+a.red {
+  background-color: rgba(239,57,50,1);
+  color: rgba(133,32,28,1);
+  border-color: rgba(133,32,28,.2);
+}
+
+a.red:hover {
+  color: rgba(239,57,50,1);
+}
+
+a.green {
+  background-color: rgba(1,151,171,1);
+  color: rgba(0,63,71,1);
+  border-color: rgba(0,63,71,.2);
+}
+
+a.green:hover {
+  color: rgba(1,151,171,1);
+}
+
+.round span.round {
+  display: block;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  font-size: 1px;
+  border: none;
+  padding: 40% 20% 0 20%;
+  color: #fff;
+}
+
+.round span:hover {
+  opacity: .85;
+  font-size: 16px;
+  -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  -moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  -o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
+.green span {
+  background: rgba(0,63,71,.7);
+}
+
+.red span {
+  background: rgba(133,32,28,.7);
+}
+
+.yellow span {
+  background: rgba(161,145,0,.7);
+
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+  .slider .bx-wrapper .bx-controls-direction {
     display: none;
   }
-}
-
-@media (max-width: 915px) {
-  #boxcontent article {
-    float: none;
-    margin: 30px auto 0 auto;
-    width: 60%;
+  .parallax-inner {
+    /*display: none;*/
   }
-
-  #four_columns {
-    width: 500px;
+  .one-third {
+    width: 100%;
+    margin: 4% 0;
   }
-
-  #four_columns .img-item:nth-of-type(3), #four_columns .img-item:nth-of-type(4) {
-    margin-top: 25px;
+  .one-half {
+    /*display: none;*/
   }
-
-  #text_columns article.column1, #text_columns .column2 {
-    float:none;
-    max-width: 500px;
-    margin: 50px 30px 0 30px;
+  h1 {
+    font-size: 125%;
   }
-
-  .column2 .row {
-    float:none;
-    margin:0 0 40px 50px;
+  .left-col {
+    width: 100%;
+    margin: 0 0 3% 0;
   }
-
-  footer .wrapper .column {
-    font-size: 12px;
-    width: 230px;
+  .sidebar {
+    width: 100%;
+    margin: 0;
   }
-}
-
-@media (max-width: 765px) {
-  .container {
-    height:1px;
-    top: -1500px;
+  h3 {
+    padding-top: 3%;
   }
-
-  header {
-    height:120px;
+  .profilePic {
+    width: 25%;
+    margin-top: 0;
+    margin-right: 8%;
   }
-
-  header nav {
-    right: auto;
-    bottom: auto;
-    left: 50%;
-    top:100px;
-    margin-left: -184px;
+  .images {
+    width: 25%;
   }
-
-  footer {
-    padding-bottom:70px;
-    height: auto;
-  }
-
-  footer .wrapper {
-    width: 350px;
-    margin: 0 auto;
-  }
-
-  footer .wrapper .column {
-    margin-top:30px;
-    float:none;
-    font-size: 14px;
-    width: auto;
-  }
-
-  footer .wrapper .social {
-    display:none;
-  }
-}
-
-@media (max-width: 500px) {
-  header {
-    margin-top: 80px;
+  .contact {
+    width: 10%;
     text-align: center;
+    margin: 1%;
   }
-
-  #four_columns {
-    width:auto;
-  }
-
-  #four_columns .img-item {
-    width: 200px;
-    float:none;
-    margin: 25px auto 0 auto;
-  }
-
-  #four_columns h2 {
-    margin: 0 30px;
-  }
-
-  .column2 .row {
-    margin: 0 0 40px 10px;
-    width:auto;
-  }
-
-  footer .wrapper {
-    width:auto;
-  }
-
-  footer .wrapper .column {
-    margin: 0 auto 15px auto;
-    max-width:300px;
-  }
-
-  #mobileMenu {
-    display: block;
-    z-index: 99;
-  }
-
-  .toggleMobile {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    display: block;
-    width: 40px;
-    height: 36px;
-    cursor: pointer;
-    z-index: 999;
-  }
-
-  .toggleMobile span.menu1, .toggleMobile span.menu2, .toggleMobile span.menu3 {
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 8px;
-    left: 0;
-    background: #EDA28C;
-    -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
-    transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
-  }
-
-  .toggleMobile span.menu1 {
-    top: 0;
-  }
-
-  .toggleMobile span.menu2 {
-    top: 14px;
-  }
-
-  .toggleMobile span.menu3 {
-    top: 28px;
-  }
-
-  .toggleMobile.active span.menu1 {
-    top: 14px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
-    transition: all 0.5s cubic-bezier(0.75, 0.25, 0.10, 0.95);
-  }
-
-  .toggleMobile.active span.menu2 {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
-    transition: all 0.5s cubic-bezier(0.75, 0.25, 0.10, 0.95);
-  }
-
-  .toggleMobile.active span.menu3 {
-    opacity: 0;
-    -webkit-transition: opacity 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
-    transition: opacity 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
-  }
-
-  header nav {
-    display:none;
-  }
-
-  header h1 {
-    font-size:40px;
-  }
-
-  header p {
-    margin-left: 60px;
-    font-size:14px;
+  .animatedIcons {
+    width: 50%;
   }
 }
-
-/* KEYFRAMES */
-
-@keyframes stylie-transform-keyframes {
-  0% {transform:translateX(30px) translateY(46px) rotate(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
-  100% {transform:translateX(260px) translateY(-150px) rotate(0deg) translate(-50%, -50%);}
-}
-
-@keyframes stylie-transform2-keyframes {
-  0% {transform:translateX(40px) translateY(40px) rotate(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
-  100% {transform:translateX(50px) translateY(40px) rotate(0deg) translate(-50%, -50%);}
-}
-
-/*#four_columns, #text_columns
-{
-        line-height:25px;
-        font-family: 'Open Sans', sans-serif;
-        clear:both;
-        width:auto;
-        max-width:900px;
-        margin:0 auto;
-}*/
