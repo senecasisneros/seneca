@@ -9,10 +9,10 @@
 }
 
 body {
-  background-color: #FFF;
+  background-color: #fff;
   font-size: 18px;
   position: relative;
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: "Love Ya Like A Sister", cursive;
 }
 
 .mainSocial {
@@ -24,13 +24,12 @@ body {
 }
 
 #name {
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: "Love Ya Like A Sister", cursive;
   font-size: 250%;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 4px 4px 4px gray;
-
 }
 
 /*h3 {
@@ -41,22 +40,22 @@ letter-spacing: 1%;
 }*/
 
 #title {
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: "Love Ya Like A Sister", cursive;
   font-size: 125%;
   text-align: center;
-  color: #4A4444;
+  color: #4a4444;
   letter-spacing: 1%;
   margin-top: 1%;
 }
 
 #quote {
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: "Love Ya Like A Sister", cursive;
   font-size: 140%;
   text-align: center;
-  color: #4A4444;
+  color: #4a4444;
   letter-spacing: 1%;
   margin-top: 1%;
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: "Love Ya Like A Sister", cursive;
 }
 
 .contact:hover {
@@ -82,7 +81,7 @@ letter-spacing: 1%;
 
 p {
   padding: 2%;
-  color: #4A4444;
+  color: #4a4444;
   text-align: justify;
 }
 
@@ -179,7 +178,8 @@ img {
   text-align: center;
 }
 
-.parallax-inner h3, .parallax-inner p {
+.parallax-inner h3,
+.parallax-inner p {
   color: white;
   text-shadow: 4px 4px 4px black;
 }
@@ -195,7 +195,7 @@ img {
 }
 
 #skillsHeader {
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: "Love Ya Like A Sister", cursive;
   text-align: center;
   font-size: 40px;
   margin-top: 3%;
@@ -203,7 +203,7 @@ img {
 }
 
 #aboutHeader {
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: "Love Ya Like A Sister", cursive;
   text-align: center;
   font-size: 40px;
   margin-top: 3%;
@@ -215,7 +215,6 @@ img {
   font-size: 40px;
   margin-top: 3%;
   text-shadow: 4px 4px 4px white;
-
 }
 
 .icons {
@@ -239,59 +238,59 @@ figure.item {
 }
 
 footer {
-  position:relative;
+  position: relative;
   clear: both;
   width: auto;
   height: 70px;
-  background:#333333;
+  background: #333333;
   overflow: auto;
 }
 
 footer .wrapper {
-  line-height:25px;
+  line-height: 25px;
   margin: 0 auto;
-  padding-top:30px;
-  width:auto;
-  max-width:900px;
-  font-size:14px;
+  padding-top: 30px;
+  width: auto;
+  max-width: 900px;
+  font-size: 14px;
 }
 
 footer .wrapper .column {
-  font-family: 'Love Ya Like A Sister', cursive;
-  color:#ababab;
-  float:left;
-  width:280px;
-  margin-right:20px;
+  font-family: "Love Ya Like A Sister", cursive;
+  color: #ababab;
+  float: left;
+  width: 280px;
+  margin-right: 20px;
 }
 
 footer .wrapper .column.midlist ul li {
-  display:block;
-  width:auto;
-  padding:0 0 10px 25px;
-  margin-bottom:10px;
+  display: block;
+  width: auto;
+  padding: 0 0 10px 25px;
+  margin-bottom: 10px;
   border-bottom: 1px solid #444444;
-  background:url(img/arrowright2.png) left 6px no-repeat;
+  background: url(img/arrowright2.png) left 6px no-repeat;
 }
 
 footer .wrapper .column.midlist ul li a:hover {
-  color:#fff;
+  color: #fff;
 }
 
 footer .wrapper .column.rightlist ul li {
-  display:block;
-  width:auto;
-  margin-bottom:15px;
+  display: block;
+  width: auto;
+  margin-bottom: 15px;
 }
 
 footer .wrapper .column.rightlist ul li a span {
-  margin-left:95px;
-  display:block;
+  margin-left: 95px;
+  display: block;
 }
 
 footer .wrapper .column.rightlist ul li a img {
-  transition: border .25s ease;
-  float:left;
-  border:3px solid #444444;
+  transition: border 0.25s ease;
+  float: left;
+  border: 3px solid #444444;
 }
 
 footer .wrapper .column.rightlist ul li a img:hover {
@@ -307,33 +306,33 @@ footer .wrapper .column h4 {
 }
 
 #copyright {
-  background: #1D1D1D;
-  height:70px;
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;
+  background: #1d1d1d;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 #copyright .wrapper {
-  font-family: 'Love Ya Like A Sister', cursive;
-  padding-top:25px;
+  font-family: "Love Ya Like A Sister", cursive;
+  padding-top: 25px;
   color: #5e5e5e;
-  font-size:14px;
-  position:relative;
+  font-size: 14px;
+  position: relative;
 }
 
 #copyright .wrapper .social {
-  position:absolute;
-  right:0;
+  position: absolute;
+  right: 0;
   top: 18px;
 }
 
 #copyright .wrapper .social a {
-  transition: opacity .25s ease;
+  transition: opacity 0.25s ease;
   margin-left: 12px;
-  display:block;
-  float:left;
+  display: block;
+  float: left;
 }
 
 #copyright .wrapper .social a:hover {
@@ -341,7 +340,7 @@ footer .wrapper .column h4 {
 }
 
 #copyright .wrapper a {
-  color: #ABABAB;
+  color: #ababab;
 }
 
 #copyright .wrapper a:hover {
@@ -373,23 +372,39 @@ footer .wrapper .column h4 {
 }
 
 @-moz-keyframes rotate {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(-360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 @-webkit-keyframes rotate {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(-360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 @-o-keyframes rotate {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(-360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 @keyframes rotate {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(-360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .round {
@@ -403,14 +418,14 @@ footer .wrapper .column h4 {
   text-decoration: none;
   text-align: center;
   font-size: 15px;
-  text-shadow: 0 1px 0 rgba(255,255,255,.7);
-  letter-spacing: -.065em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  letter-spacing: -0.065em;
   font-family: "Hammersmith One", sans-serif;
-  -webkit-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
-  box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
   border-radius: 300px;
   z-index: 1;
   border-width: 4px;
@@ -424,10 +439,10 @@ footer .wrapper .column h4 {
   top: -15%;
   font-size: 33px;
   padding-top: 38px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-  -o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-  -moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-  box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   z-index: 2;
   border-size: 10px;
   -webkit-transform: rotate(-360deg);
@@ -437,32 +452,32 @@ footer .wrapper .column h4 {
 }
 
 a.red {
-  background-color: rgba(239,57,50,1);
-  color: rgba(133,32,28,1);
-  border-color: rgba(133,32,28,.2);
+  background-color: rgba(239, 57, 50, 1);
+  color: rgba(133, 32, 28, 1);
+  border-color: rgba(133, 32, 28, 0.2);
 }
 
 a.red:hover {
-  color: rgba(239,57,50,1);
+  color: rgba(239, 57, 50, 1);
 }
 
 a.green {
-  background-color: rgba(1,151,171,1);
-  color: rgba(0,63,71,1);
-  border-color: rgba(0,63,71,.2);
+  background-color: rgba(1, 151, 171, 1);
+  color: rgba(0, 63, 71, 1);
+  border-color: rgba(0, 63, 71, 0.2);
 }
 
 a.green:hover {
-  color: rgba(1,151,171,1);
+  color: rgba(1, 151, 171, 1);
 }
 
 .round span.round {
   display: block;
   opacity: 0;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   font-size: 1px;
   border: none;
   padding: 40% 20% 0 20%;
@@ -470,30 +485,28 @@ a.green:hover {
 }
 
 .round span:hover {
-  opacity: .85;
+  opacity: 0.85;
   font-size: 16px;
-  -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
-  -moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
-  -o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
-  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  -o-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .green span {
-  background: rgba(0,63,71,.7);
+  background: rgba(0, 63, 71, 0.7);
 }
 
 .red span {
-  background: rgba(133,32,28,.7);
+  background: rgba(133, 32, 28, 0.7);
 }
 
 .yellow span {
-  background: rgba(161,145,0,.7);
-
+  background: rgba(161, 145, 0, 0.7);
 }
 
 /*Media Queries*/
 @media screen and (max-width: 768px) {
-
   .slider1 img {
     /*margin-top: 10%;*/
     min-width: 102%;
@@ -506,7 +519,8 @@ a.green:hover {
     background: url("image/color.png") repeat fixed 100%;
     text-align: center;
   }
-  #quote, #title {
+  #quote,
+  #title {
     font-size: 95%;
   }
   .logo {
